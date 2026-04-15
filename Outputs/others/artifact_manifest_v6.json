@@ -1,0 +1,100 @@
+{
+  "title": "Adversarially-Resilient Covert Multimedia Communication via Quantum-Inspired Embedding and AI-Driven Warden Modeling",
+  "version": "v6",
+  "config": {
+    "image_size": 256,
+    "payload_ratios": [
+      0.01,
+      0.03,
+      0.05,
+      0.1,
+      0.15
+    ],
+    "alpha_grid": [
+      0.0,
+      0.25,
+      0.5,
+      0.75,
+      1.0
+    ],
+    "alpha_representatives": [
+      0.0,
+      0.5,
+      1.0
+    ],
+    "alpha_smoke": 0.5,
+    "n_variants_per_ratio": 36,
+    "test_size": 0.3,
+    "whitening_seed": 123,
+    "rf_estimators": 300,
+    "warden_models": [
+      "logreg",
+      "rf"
+    ],
+    "save_figures": true,
+    "basis_keep_prob": 0.62,
+    "selector_jitter": 0.15,
+    "position_shuffle_strength": 0.35,
+    "analysis_seeds": [
+      7,
+      21,
+      42,
+      84,
+      126
+    ],
+    "stability_payload_ratios": [
+      0.1,
+      0.15
+    ],
+    "payload_constraint_min": 0.05,
+    "tradeoff_weights": {
+      "auc": 0.4,
+      "divergence": 0.25,
+      "distortion": 0.2,
+      "payload_reward": 0.15
+    },
+    "regime_bins": {
+      "low": [
+        0.0,
+        0.03
+      ],
+      "medium": [
+        0.03,
+        0.1
+      ],
+      "high": [
+        0.1,
+        1.0
+      ]
+    }
+  },
+  "output_dir": "outputs\\springer_cybersecurity_covert_comm",
+  "tables": [
+    "smoke_test_results_v4.csv",
+    "payload_alpha_sweep_results_v6.csv",
+    "feature_divergence_results_v6.csv",
+    "quality_metrics_results_v6.csv",
+    "sender_warden_tradeoff_v6.csv",
+    "alpha_summary_v6.csv",
+    "phase_best_alpha_v6.csv",
+    "phase_best_alpha_realistic_v6.csv",
+    "pareto_front_v6.csv",
+    "payload_regime_summary_v6.csv",
+    "seed_stability_full_v6.csv",
+    "seed_stability_summary_v6.csv"
+  ],
+  "figures": [
+    "cover_image.png",
+    "auc_vs_payload_alpha_v6.png",
+    "psnr_vs_payload_alpha_v6.png",
+    "js_proxy_vs_payload_alpha_v6.png",
+    "fisher_vs_payload_alpha_v6.png",
+    "phase_diagram_auc_v6.png",
+    "phase_diagram_tradeoff_v6.png",
+    "feature_space_separability_v6.png",
+    "seed_stability_auc_v6.png",
+    "roc_curve_alpha_comparison_v6.png",
+    "pareto_auc_psnr_payload_v6.png",
+    "operating_regimes_auc_v6.png"
+  ]
+}
