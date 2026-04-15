@@ -7,4 +7,4 @@ This repository contains the Jupyter notebook used for the analysis in the prepa
 Contains all outputs and data used.
 
 ## Zenodo
-
+Amal Ajayan. amalajayan13/Adversarially-Resilient-Covert-Multimedia-Communication-via-Quantum-Inspired: V2. v2, Zenodo, 15 Apr. 2026, https://doi.org/10.5281/zenodo.19599691.
